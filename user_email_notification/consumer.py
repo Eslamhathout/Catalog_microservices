@@ -1,11 +1,13 @@
 import pika, os, django
 from helper import fire_email
+from decouple import config
 
 #To communicate with django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "user_email_notification.settings")
 django.setup()
 
-params = pika.URLParameters("amqps://yeuhviyy:NA5qJVEXTwsaptRMHZ0VRByfNzHn2OjS@beaver.rmq.cloudamqp.com/yeuhviyy")
+url = config("MQ_URL", "your mq URL")
+params = pika.URLParameters(url)
 connection = pika.BlockingConnection(params)
 channel = connection.channel()
 

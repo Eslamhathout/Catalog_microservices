@@ -53,12 +53,12 @@ MIDDLEWARE = [
 ]
 
 # Email
-EMAIL_HOST = config("EMAIL_HOST", 'smtp.gmail.com')  # Host server
-EMAIL_HOST_USER = config("EMAIL_HOST_USER", 'i.a.hathout@gmail.com')  # User who will send that mail
-EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", 'sjikttdozrisqovp')
-EMAIL_SENDER = config("EMAIL_SENDER", 'i.a.hathout@gmail.com')
+EMAIL_HOST = config("EMAIL_HOST", 'smtp.gmail.com')  
+EMAIL_HOST_USER = config("EMAIL_HOST_USER", 'xx@gmail.com') 
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", 'xxx')
+EMAIL_SENDER = config("EMAIL_SENDER", 'xxxout@gmail.com')
 EMAIL_PORT = config("EMAIL_PORT", 587)
-EMAIL_USE_TLS = config("EMAIL_USE_TLS", 'true')  # Encryption method
+EMAIL_USE_TLS = config("EMAIL_USE_TLS", 'true')
 
 
 ROOT_URLCONF = "user_email_notification.urls"

@@ -2,8 +2,8 @@ from rest_framework.test import APITestCase
 from model_bakery import baker
 from products.models import Product
 from rest_framework import status
-from unittest import mock
-from products.producer import pika
+
+
 class TestProductViewSet(APITestCase):
 
     def setUp(self) -> None:
@@ -35,19 +35,6 @@ class TestProductViewSet(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_202_ACCEPTED)
         self.assertEqual(self.product_3.name, new_product_name)
     
-    # @mock.patch('products.producer.pika.BlockingConnection', spec=pika.BlockingConnection)
-    # def test_create_products(self, mocked):
-    #     body =     {
-    #         "name": 'Fanta5', 
-    #         "cost": 50,
-    #         "price": 4
-    #     }
-    #     response = self.client.post(self.url, data=body)
-
-    #     self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-    #     self.assertEqual(response.data['name'], body['name'])
-    #     self.assertTrue(Product.objects.filter(name=body['name']).exists())
-
     def test_delete_products(self):
         url = f"{self.url}/{str(self.product_3.id)}"
         response = self.client.delete(url)

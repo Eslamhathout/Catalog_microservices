@@ -1,0 +1,420 @@
+{
+	"info": {
+		"_postman_id": "8443d5a0-d7de-4b5b-b1ef-43083c1dd065",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 05 Aug 2023 12:10:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1519"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"BvBMwoUTAbkpkfBewhslOBKiRbjLFIOSfaHRkBDxLBVVCVIXhq\",\n        \"price\": \"541334.537\",\n        \"cost\": \"4056289.295\",\n        \"image\": null\n    },\n    {\n        \"id\": 4,\n        \"name\": \"43\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 5,\n        \"name\": \"AAA\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Eslam test\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Eslam test\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Eslam test\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Eslam test\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Eslam test\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Eslam test\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Eslam test2\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Eslam test2\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Alcantara\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Alcantara\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Alcantara\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Alcantara\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Alcantara\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Holding\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Holding\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 21,\n        \"name\": \"Holding\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    },\n    {\n        \"id\": 22,\n        \"name\": \"test Holding\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\",\n        \"image\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"new product\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"name\": \"new product\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 05 Aug 2023 12:13:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "75"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"new product\",\n    \"price\": \"43.000\",\n    \"cost\": \"4.000\",\n    \"image\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"new product\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/product/44",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"44"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"name\": \"new product\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"1"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 05 Aug 2023 12:16:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"updated name\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/product/42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"42"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"name\": \"updated name\",\n        \"price\": \"43.000\",\n        \"cost\": \"4.000\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/product/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"4"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 05 Aug 2023 12:21:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "75"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"updated name\",\n    \"price\": \"43.000\",\n    \"cost\": \"4.000\",\n    \"image\": null\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,6 +1,9 @@
 import pika
+from decouple import config
 
-params = pika.URLParameters("amqps://yeuhviyy:NA5qJVEXTwsaptRMHZ0VRByfNzHn2OjS@beaver.rmq.cloudamqp.com/yeuhviyy")
+
+url = config("MQ_URL", "your mq URL")
+params = pika.URLParameters(url)
 connection = pika.BlockingConnection(params)
 channel = connection.channel()
 
