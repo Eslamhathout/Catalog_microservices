@@ -1,10 +1,7 @@
-import pika, os, django
+import pika
 from helper import fire_email
 from decouple import config
 
-#To communicate with django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "user_email_notification.settings")
-django.setup()
 
 url = config("MQ_URL", "your mq URL")
 params = pika.URLParameters(url)
